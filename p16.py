@@ -18,7 +18,8 @@ class Solution(object):
         		if abs(diff) < min_diff:
         			min_diff = abs(diff)
         			best = s
-
+        		if diff == 0:
+        			return target
         		if diff > 0:
         			j -= 1
         		else:
