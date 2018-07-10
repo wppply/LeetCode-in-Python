@@ -10,4 +10,5 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        
+        for l in lists:
+        	
