@@ -7,7 +7,8 @@ class Solution(object):
         """
 
         def dfs(sol, i, j, level):
-            if level > len(word):
+
+            if level > len(word) or sol != word[:level]:
                 return False
             if sol == word:
                 return True
